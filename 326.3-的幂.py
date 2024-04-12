@@ -63,6 +63,11 @@
 
 # @lc code=start
 class Solution:
+    """
+    n < 1 时，直接返回 False 
+    n % 3 == 0 时，n 除以 3
+    n == 1 时，返回 True
+    """ 
     def isPowerOfThree(self, n: int) -> bool:
         while n > 1 and n % 3 == 0:
             n /= 3
