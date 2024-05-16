@@ -11,6 +11,9 @@
 #         self.val = val
 #         self.left = left
 #         self.right = right
+from typing import Optional
+
+
 class Solution:
     def dfs(self, node, isLeft):
         if not node: return 0
